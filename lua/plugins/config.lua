@@ -1,11 +1,4 @@
 return {
-  { "sainnhe/gruvbox-material" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox-material",
-    },
-  },
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -25,5 +18,15 @@ return {
   {
     "fole/flash.nvim",
     enabled = false,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        theme = {
+          normal = { a = { bg = "#b86f50" }, b = { bg = "#c28569" }, c = { bg = "#debc96" } },
+        },
+      },
+    },
   },
 }
