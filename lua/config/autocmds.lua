@@ -14,3 +14,11 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     vim.opt.shiftwidth = 2
   end,
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.h", "*.hpp", "*.c", "*.cpp", "*.rs", "*.go", "CMakeLists.txt", "*.cmake" },
+  callback = function()
+    vim.opt.tabstop = 4
+    vim.opt.shiftwidth = 4
+  end,
+})
