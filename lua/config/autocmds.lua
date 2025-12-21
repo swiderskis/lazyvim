@@ -8,7 +8,7 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-  pattern = { "*.jsx", "*.tsx", "*.js", "*.ts", "*.html", "*.css", "*.lua" },
+  pattern = { "*.jsx", "*.tsx", "*.js", "*.ts", "*.html", "*.css", "*.lua", "CMakeLists.txt", "*.cmake" },
   callback = function()
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-  pattern = { "*.h", "*.hpp", "*.c", "*.cpp", "*.rs", "*.go", "CMakeLists.txt", "*.cmake" },
+  pattern = { "*.h", "*.hpp", "*.c", "*.cpp", "*.rs", "*.go" },
   callback = function()
     vim.opt.tabstop = 4
     vim.opt.shiftwidth = 4
