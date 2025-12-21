@@ -34,6 +34,22 @@ function M.setup()
   vim.opt.background = "light"
   vim.cmd("syntax reset")
   vim.g.colors_name = "seb-theme"
+  vim.g.terminal_color_0 = "#181425"
+  vim.g.terminal_color_1 = "#a22633"
+  vim.g.terminal_color_2 = "#265c42"
+  vim.g.terminal_color_3 = "#feae34"
+  vim.g.terminal_color_4 = "#124e89"
+  vim.g.terminal_color_5 = "#68386c"
+  vim.g.terminal_color_6 = "#0099db"
+  vim.g.terminal_color_7 = "#ffffff"
+  vim.g.terminal_color_8 = "#5a6988"
+  vim.g.terminal_color_9 = "#a22633"
+  vim.g.terminal_color_10 = "#265c42"
+  vim.g.terminal_color_11 = "#feae34"
+  vim.g.terminal_color_12 = "#124e89"
+  vim.g.terminal_color_13 = "#68386c"
+  vim.g.terminal_color_14 = "#0099db"
+  vim.g.terminal_color_15 = "#ffffff"
 
   local hl = vim.api.nvim_set_hl
   hl(0, "Normal", { fg = c.fg, bg = c.bg })
